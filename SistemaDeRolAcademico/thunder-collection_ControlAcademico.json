@@ -1,0 +1,206 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "ControlAcademico",
+    "dateExported": "2024-03-07T04:01:10.182Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "02b0eb46-1f78-449c-94c7-9c62a5f17b0d",
+            "name": "PublicRoutes",
+            "containerId": "",
+            "created": "2024-03-04T07:04:21.514Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "932b719f-3ac7-4cf0-a79d-da3ee653e129",
+            "name": "StudentsRoutes",
+            "containerId": "",
+            "created": "2024-03-04T07:04:43.383Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "22e69f9b-fdf3-4f29-93a8-79175a63aecf",
+            "name": "ProfessorRoutes",
+            "containerId": "",
+            "created": "2024-03-04T07:05:20.478Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "4a107aa8-548e-46a2-81da-29aef0fd09af",
+            "colId": "555689d8-144a-43b8-b69d-e1bbb9ebae38",
+            "containerId": "02b0eb46-1f78-449c-94c7-9c62a5f17b0d",
+            "name": "register",
+            "url": "register",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-04T07:05:56.828Z",
+            "modified": "2024-03-05T04:47:31.166Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Carlos"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Martínez"
+                    },
+                    {
+                        "name": "email",
+                        "value": "lmartinez@gmail.com"
+                    },
+                    {
+                        "name": "username",
+                        "value": "carmc29"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "role",
+                        "value": "professor"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "65e575fafc31cb549ea6d298"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "65e57628fc31cb549ea6d29c"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "65e57640fc31cb549ea6d2a0"
+                    },
+                    {
+                        "name": "subject",
+                        "value": "65e5765efc31cb549ea6d2a8",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "378f07ed-7ec0-45bd-bc31-9539f5d696b4",
+            "colId": "555689d8-144a-43b8-b69d-e1bbb9ebae38",
+            "containerId": "02b0eb46-1f78-449c-94c7-9c62a5f17b0d",
+            "name": "login",
+            "url": "login",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-04T07:06:01.789Z",
+            "modified": "2024-03-04T07:13:25.766Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "carmc"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "aacd8e38-ca60-4d02-8317-79e0cb0cce58",
+            "colId": "555689d8-144a-43b8-b69d-e1bbb9ebae38",
+            "containerId": "22e69f9b-fdf3-4f29-93a8-79175a63aecf",
+            "name": "createSubject",
+            "url": "class/add",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-04T07:13:47.677Z",
+            "modified": "2024-03-04T07:21:02.998Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NzQ2NDY0NDc5MjU1ZGEzMDQ2NjUiLCJ1c2VybmFtZSI6ImNhcm1jIiwibmFtZSI6IkNhcmxvcyIsInJvbGUiOiJQUk9GRVNTT1IiLCJpYXQiOjE3MDk1MzY0MDUsImV4cCI6MTcwOTU0NzIwNX0.peUV9PXCGUThJGJg90ecqdruuSJT12iVzSgOy_bVewY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Cocina"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Clase de Taller"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "965e863f-22e3-49f6-83ce-9057f7832012",
+            "colId": "555689d8-144a-43b8-b69d-e1bbb9ebae38",
+            "containerId": "22e69f9b-fdf3-4f29-93a8-79175a63aecf",
+            "name": "deleteSubject",
+            "url": "",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-03-07T03:54:16.588Z",
+            "modified": "2024-03-07T03:54:16.588Z",
+            "headers": []
+        },
+        {
+            "_id": "bdc525b8-2378-4b4c-977c-2a5af59da368",
+            "colId": "555689d8-144a-43b8-b69d-e1bbb9ebae38",
+            "containerId": "22e69f9b-fdf3-4f29-93a8-79175a63aecf",
+            "name": "updateSubject",
+            "url": "",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-03-07T03:54:42.646Z",
+            "modified": "2024-03-07T03:54:42.646Z",
+            "headers": []
+        },
+        {
+            "_id": "3800b47a-8f02-4fcb-aa57-9aa7354df444",
+            "colId": "555689d8-144a-43b8-b69d-e1bbb9ebae38",
+            "containerId": "932b719f-3ac7-4cf0-a79d-da3ee653e129",
+            "name": "updateAccount",
+            "url": "",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-07T03:55:28.556Z",
+            "modified": "2024-03-07T03:55:28.556Z",
+            "headers": []
+        },
+        {
+            "_id": "67523637-92c3-4467-993f-617f0d683099",
+            "colId": "555689d8-144a-43b8-b69d-e1bbb9ebae38",
+            "containerId": "22e69f9b-fdf3-4f29-93a8-79175a63aecf",
+            "name": "updateStudent",
+            "url": "",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-03-07T04:00:40.964Z",
+            "modified": "2024-03-07T04:00:40.964Z",
+            "headers": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2557/"
+        }
+    }
+}
